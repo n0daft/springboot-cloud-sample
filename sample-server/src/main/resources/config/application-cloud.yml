@@ -1,0 +1,7 @@
+server:
+    port: ${PORT}
+
+logging:
+    level:
+        root: WARN
+        com.elderbyte: INFO
