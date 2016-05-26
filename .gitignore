@@ -1,0 +1,12 @@
+
+
+######################
+# Gradle
+######################
+.gradle/
+!gradle-wrapper.jar
+
+# Gradle Properties hold API keys so dont share :)
+gradle.properties
+
+.idea
