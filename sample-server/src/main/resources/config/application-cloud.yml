@@ -1,7 +1,7 @@
 server:
     port: ${PORT}
 
-logging:
-    level:
-        root: WARN
-        com.elderbyte: INFO
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://elderbyte-spring-eureka-serve.vj9v.flynnhub.com}/eureka/

@@ -3,5 +3,5 @@ server:
 
 logging:
     level:
-        root: WARN
+        root: INFO
         com.elderbyte: INFO
