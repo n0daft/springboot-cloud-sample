@@ -1,11 +1,11 @@
 server:
     port: ${PORT}
 
-
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://elderbyte-spring-eureka-serve.vj9v.flynnhub.com}/eureka/
   instance:
-      hostname: ${APPLICATION_DOMAIN}
+      hostname: ${APPLICATION_DOMAIN:springboot-paas-sample.discoverd}
+      preferIpAddress: true
       nonSecurePort: 80
