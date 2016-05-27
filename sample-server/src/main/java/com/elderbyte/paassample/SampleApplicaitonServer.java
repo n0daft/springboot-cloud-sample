@@ -24,9 +24,10 @@ public class SampleApplicaitonServer {
         ApplicationContext ctx = SpringApplication.run(SampleApplicaitonServer.class, args);
 
         Environment env = ctx.getEnvironment();
+
         log.info("Access URLs:\n----------------------------------------------------------\n\t" +
                         "External: \thttp://{}:{}\n----------------------------------------------------------",
-                InetAddress.getLocalHost().getHostAddress(),
+                InetAddress.getLocalHost().getHostName(),
                 env.getProperty("server.port"));
     }
 
