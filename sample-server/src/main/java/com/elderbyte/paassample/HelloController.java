@@ -1,15 +1,17 @@
 package com.elderbyte.paassample;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class HelloController {
 
-    static int counter = 0;
+    @Autowired
+    private CounterRestController counterController;
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot! Invoked " + ++counter + " times!";
+        return "Greetings from Spring Boot! Invoked " + counterController.incrementAndGet() + " times!";
     }
 }

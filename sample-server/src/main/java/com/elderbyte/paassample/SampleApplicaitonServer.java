@@ -27,7 +27,7 @@ public class SampleApplicaitonServer {
 
         log.info("Access URLs:\n----------------------------------------------------------\n\t" +
                         "External: \thttp://{}:{}\n----------------------------------------------------------",
-                InetAddress.getLocalHost().getHostName(),
+                InetAddress.getLocalHost().getHostAddress(),
                 env.getProperty("server.port"));
     }
 
