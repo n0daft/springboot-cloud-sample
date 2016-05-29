@@ -7,4 +7,3 @@ eureka:
       defaultZone: http://eureka-server.9p2k.flynnhub.com/eureka/
   instance:
       preferIpAddress: true
-      nonSecurePort: 80
