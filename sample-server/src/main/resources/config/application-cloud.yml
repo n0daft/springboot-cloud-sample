@@ -4,6 +4,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-server.9p2k.flynnhub.com/eureka/
+      defaultZone: http://eureka-server-web.discoverd
   instance:
       preferIpAddress: true
