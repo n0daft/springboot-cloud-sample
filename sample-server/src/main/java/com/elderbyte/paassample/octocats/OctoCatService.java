@@ -26,7 +26,7 @@ public class OctoCatService {
         return this.octoCats;
     }
 
-    public void add(OctoCat o){
+    public void save(OctoCat o){
         this.octoCats.add(o);
     }
 

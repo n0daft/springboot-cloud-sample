@@ -26,6 +26,7 @@ public class OctoCatController {
     public ResponseEntity<OctoCat> create(@RequestParam(value = "name") String name){
 
         OctoCat octoCat = octoCatService.create(name);
+        octoCatService.save(octoCat);
         return ResponseEntity.ok(octoCat);
     }
 
