@@ -1,6 +1,8 @@
 package com.elderbyte.paassample.octocats;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.time.LocalDateTime;
 
 public class OctoCat {
 
@@ -8,10 +10,12 @@ public class OctoCat {
     // Fields
     // *************************************************************
 
+    @JsonProperty("id")
     private int id;
+    @JsonProperty("name")
     private String name;
-    private Date Date;
-    //private LocalDateTime dateOfBirth;
+    @JsonProperty("dateOfBirth")
+    private LocalDateTime dateOfBirth;
 
     // *************************************************************
     // Constructors
@@ -37,15 +41,6 @@ public class OctoCat {
         this.name = name;
     }
 
-    public Date getDate() {
-        return Date;
-    }
-
-    public void setDate(Date date) {
-        Date = date;
-    }
-
-    /*
     public LocalDateTime getDateOfBirth() {
         return dateOfBirth;
     }
@@ -53,6 +48,6 @@ public class OctoCat {
     public void setDateOfBirth(LocalDateTime dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-    */
+
 
 }

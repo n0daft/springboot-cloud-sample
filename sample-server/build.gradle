@@ -30,6 +30,9 @@ dependencies {
 
     compile("org.springframework.cloud:spring-cloud-starter-eureka:1.1.0.RELEASE")
 
+    // Needed for Jackson serialization of Java 8 Date API
+    compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.3.0-rc1')
+
     testCompile("junit:junit")
 }
 
