@@ -2,7 +2,6 @@ package com.elderbyte.paassample.octocats;
 
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -34,7 +33,7 @@ public class OctoCatService {
 
         OctoCat octoCat = new OctoCat(counter.incrementAndGet());
         octoCat.setName(name);
-        octoCat.setDateOfBirth(LocalDateTime.now());
+        //octoCat.setDateOfBirth(LocalDateTime.now());
 
         return octoCat;
     }

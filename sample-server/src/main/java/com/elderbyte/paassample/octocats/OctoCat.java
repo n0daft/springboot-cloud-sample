@@ -1,8 +1,5 @@
 package com.elderbyte.paassample.octocats;
 
-import java.time.LocalDateTime;
-
-
 public class OctoCat {
 
     // *************************************************************
@@ -11,7 +8,7 @@ public class OctoCat {
 
     private int id;
     private String name;
-    private LocalDateTime dateOfBirth;
+    //private LocalDateTime dateOfBirth;
 
     // *************************************************************
     // Constructors
@@ -37,6 +34,7 @@ public class OctoCat {
         this.name = name;
     }
 
+    /*
     public LocalDateTime getDateOfBirth() {
         return dateOfBirth;
     }
@@ -44,6 +42,6 @@ public class OctoCat {
     public void setDateOfBirth(LocalDateTime dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-
+    */
 
 }
