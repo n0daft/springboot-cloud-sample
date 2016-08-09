@@ -3,6 +3,7 @@ server:
 
 eureka:
   client:
+    healthcheck.enabled: true
     serviceUrl:
       defaultZone: http://eureka-server-web.discoverd:8080/eureka/
   instance:
