@@ -45,6 +45,10 @@ dependencies {
     testCompile("junit:junit")
 }
 
+bootRepackage  {
+    classifier = 'exec'
+}
+
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
